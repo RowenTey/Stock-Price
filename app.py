@@ -33,7 +33,7 @@ st.header("Which stock would you like to see today?")
 stock = get_user_input()
 
 # fetch chart data
-chart = yf.download(stock)
+chart = fetch_chart_data(stock)
 chart_close = chart.drop(['High','Low','Adj Close','Open','Volume'], axis = 1)
 
 # display chart
