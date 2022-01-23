@@ -1,5 +1,5 @@
 # [Stock-Price-Predictor](https://share.streamlit.io/rowentey/stock-price/main/app.py)
-*A stock web app that allows users to see stock charts and stock price predictions using machine learning.*
+*A web app that allows users to predict stock prices using SLTM and compare them to actual prices.*
 
 ---
 
@@ -11,12 +11,12 @@ Our stock price prediction model is LSTM, built using Data Science and Machine L
 
 ---
 
-*Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events like Covid-19.
+*Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events akin to Covid-19.
 
 *Our Solution*: We hypothesise that black swan events are characterised by sudden spikes in trading volume. For example, when there is rapid buying or selling in a short amount of time. Our app allows students, professionals and enthusiasts alike to study the relationship between trade volume and the accuracy of LSTM predictions relative to actual prices.
 
 # How To Use
 First, type in the **ticker** symbol you're looking for.  
-Next, click on the sidebar to select the date you wish to start predicting the stock price from.  
+Next, click the arrow icon on the top left corner. This opens up a sidebar. Select the date you wish to start predicting the stock price from.  
 Give a moment for the model to process your input.  
 And that's it! The prediction will appear magically before your eyes. It's that **easy**!
