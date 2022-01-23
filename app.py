@@ -86,9 +86,9 @@ def predict_stock(data, date):
     ax2 = ax1.twinx()
 
     sb.set(rc={'axes.facecolor':'black', 'figure.facecolor':'black', 'axes.labelcolor': 'white', 'axes.edgecolor': 'white'})
-    sb.lineplot(data=predictStock['Close'], ax=ax1, alpha=1.0, color='orange')
-    sb.lineplot(data=valid_data["Predictions"], ax=ax1, alpha=1.0, color="#58FF4B")
-    sb.lineplot(data=predictStock['Volume'], ax=ax2, alpha=0.4, color='yellow')
+    sb.lineplot(data=predictStock['Close'], ax=ax1, alpha=1.0, color='orange',legend="full")
+    sb.lineplot(data=valid_data["Predictions"], ax=ax1, alpha=1.0, color="#58FF4B",legend="full")
+    sb.lineplot(data=predictStock['Volume'], ax=ax2, alpha=0.4, color='yellow',legend="full")
     plt.show()
     st.subheader("Predicted chart")
     st.pyplot(fig,use_container_width=True)
@@ -99,7 +99,8 @@ st.image("https://cdn.substack.com/image/fetch/f_auto,q_auto:good,fl_progressive
 st.title("Welcome to the Stock App!")
 with st.expander("How To Use"):
     st.markdown("First, type in the **ticker** symbol you're looking for.")  
-    st.markdown("Next, click on the sidebar to select the date you wish to start predicting the stock price from.")             
+    st.markdown("Next, click the arrow icon on the top left corner. This opens up a sidebar.")             
+    st.markdown(" Select the date you wish to start predicting the stock price from.")
     st.markdown("Give a moment for the model to process your input.")              
     st.markdown("And that's it! The prediction will appear magically before your eyes. It's that **easy**!")            
 
@@ -134,12 +135,13 @@ plotData = chart.drop(["Open", "High", "Low", "Adj Close"], axis = 1)
 fig = plt.figure(figsize=(10,5))
 ax1 = fig.add_subplot(111)
 ax2 = ax1.twinx()
+plt.legend(labels=["CLose","Volume"],framealpha=1, frameon=True)
 
 sb.set(rc={'axes.facecolor':'#0E1117', 'figure.facecolor':'#0E1117',
            'axes.labelcolor':'white', 'xtick.color':'white','ytick.color':'white',
-           'axes.labelweight':'bold'})
-sb.lineplot(data=plotData['Close'], ax=ax1, alpha=1.0, color='orange')
-sb.lineplot(x=plotData.index, y=plotData['Volume'], data=plotData['Volume'], color='yellow', ax=ax2, alpha=0.6)
+           'axes.labelweight':'bold','legend.labelcolor':'white','legend.fancybox':'True'})
+sb.lineplot(data=plotData['Close'], ax=ax1, alpha=1.0, color='orange', legend="auto")
+sb.lineplot(x=plotData.index, y=plotData['Volume'], data=plotData['Volume'], color='yellow', ax=ax2, alpha=0.6, legend="auto")
 
 st.subheader("Static chart - Closing Price & Volume")
 st.pyplot(fig,use_container_width=True)
