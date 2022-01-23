@@ -87,7 +87,7 @@ def predict_stock(data, date):
 
     sb.set(rc={'axes.facecolor':'black', 'figure.facecolor':'black', 
                'axes.labelcolor': 'white', 'axes.edgecolor': 'white',
-               'legend.labelcolor':'white'})
+               'legend.labelcolor':'white','legend.loc':'upper right'})
     sb.lineplot(data=predictStock['Close'], ax=ax1, alpha=1.0, color='orange', legend="auto", label="Close")
     sb.lineplot(data=valid_data["Predictions"], ax=ax1, alpha=1.0, color="#58FF4B", legend="auto", label="Predicted")
     sb.lineplot(data=predictStock['Volume'], ax=ax2, alpha=0.4, color='yellow', legend="auto", label="Volume")
@@ -140,7 +140,7 @@ ax2 = ax1.twinx()
 
 sb.set(rc={'axes.facecolor':'#0E1117', 'figure.facecolor':'#0E1117',
            'axes.labelcolor':'white', 'xtick.color':'white','ytick.color':'white',
-           'axes.labelweight':'bold','legend.labelcolor':'white','legend.fancybox':'True'})
+           'axes.labelweight':'bold','legend.labelcolor':'white','legend.loc':'upper right'})
 sb.lineplot(data=plotData['Close'], ax=ax1, alpha=1.0, color='orange', legend="auto", label="Close")
 sb.lineplot(x=plotData.index, y=plotData['Volume'], data=plotData['Volume'], color='yellow', 
             ax=ax2, alpha=0.6, legend="auto", label="Volume")
