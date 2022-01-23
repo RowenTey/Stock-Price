@@ -8,7 +8,7 @@ import pandas as pd
 from keras.models import Sequential
 from keras.layers import LSTM, Dense
 from sklearn.preprocessing import MinMaxScaler
-from sklearn import *
+from cProfile import label
 
 
 st.set_page_config(
@@ -135,13 +135,14 @@ plotData = chart.drop(["Open", "High", "Low", "Adj Close"], axis = 1)
 fig = plt.figure(figsize=(10,5))
 ax1 = fig.add_subplot(111)
 ax2 = ax1.twinx()
-plt.legend(labels=["CLose","Volume"],framealpha=1, frameon=True)
+plt.legend(ax1,ax2,labels=["Close","Volume"], framealpha=1, frameon=True)
 
 sb.set(rc={'axes.facecolor':'#0E1117', 'figure.facecolor':'#0E1117',
            'axes.labelcolor':'white', 'xtick.color':'white','ytick.color':'white',
            'axes.labelweight':'bold','legend.labelcolor':'white','legend.fancybox':'True'})
 sb.lineplot(data=plotData['Close'], ax=ax1, alpha=1.0, color='orange', legend="auto")
 sb.lineplot(x=plotData.index, y=plotData['Volume'], data=plotData['Volume'], color='yellow', ax=ax2, alpha=0.6, legend="auto")
+plt.show()
 
 st.subheader("Static chart - Closing Price & Volume")
 st.pyplot(fig,use_container_width=True)
