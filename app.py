@@ -85,10 +85,12 @@ def predict_stock(data, date):
     ax1 = fig.add_subplot(111)
     ax2 = ax1.twinx()
 
-    sb.set(rc={'axes.facecolor':'black', 'figure.facecolor':'black', 'axes.labelcolor': 'white', 'axes.edgecolor': 'white'})
-    sb.lineplot(data=predictStock['Close'], ax=ax1, alpha=1.0, color='orange',legend="full")
-    sb.lineplot(data=valid_data["Predictions"], ax=ax1, alpha=1.0, color="#58FF4B",legend="full")
-    sb.lineplot(data=predictStock['Volume'], ax=ax2, alpha=0.4, color='yellow',legend="full")
+    sb.set(rc={'axes.facecolor':'black', 'figure.facecolor':'black', 
+               'axes.labelcolor': 'white', 'axes.edgecolor': 'white',
+               'legend.labelcolor':'white'})
+    sb.lineplot(data=predictStock['Close'], ax=ax1, alpha=1.0, color='orange', legend="auto", label="Close")
+    sb.lineplot(data=valid_data["Predictions"], ax=ax1, alpha=1.0, color="#58FF4B", legend="auto", label="Predicted")
+    sb.lineplot(data=predictStock['Volume'], ax=ax2, alpha=0.4, color='yellow', legend="auto", label="Volume")
     plt.show()
     st.subheader("Predicted chart")
     st.pyplot(fig,use_container_width=True)
