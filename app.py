@@ -90,7 +90,7 @@ def predict_stock(data, date):
     sb.lineplot(data=valid_data["Predictions"], ax=ax1, alpha=1.0, color="#58FF4B")
     sb.lineplot(data=predictStock['Volume'], ax=ax2, alpha=0.4, color='yellow')
     plt.show()
-    st.subheader("Predicted price chart")
+    st.subheader("Predicted chart")
     st.pyplot(fig,use_container_width=True)
     st.markdown('---')
     
