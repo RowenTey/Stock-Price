@@ -102,7 +102,7 @@ st.title("Welcome to the Stock App!")
 with st.expander("How To Use"):
     st.markdown("First, type in the **ticker** symbol you're looking for.")  
     st.markdown("Next, click the arrow icon on the top left corner. This opens up a sidebar.")             
-    st.markdown(" Select the date you wish to start predicting the stock price from.")
+    st.markdown("Select the date you wish to start predicting the stock price from.")
     st.markdown("Give a moment for the model to process your input.")              
     st.markdown("And that's it! The prediction will appear magically before your eyes. It's that **easy**!")            
 
