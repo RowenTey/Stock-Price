@@ -21,4 +21,6 @@ Next, click the arrow icon on the top left corner. This opens up a sidebar. Sele
 Give a moment for the model to process your input.  
 And that's it! The prediction will appear magically before your eyes. It's that **easy**!
 
-*This was created as part of submission for Hack4Pan 2022*
+---
+
+*This repository is submitted as an entry for Hack4Pan 2022*
