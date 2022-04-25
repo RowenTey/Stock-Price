@@ -23,4 +23,4 @@ And that's it! The prediction will appear magically before your eyes. It's that 
 
 ---
 
-*This repository is submitted as an entry for Hack4Pan 2022*
+*This repository is submitted as an entry for [Hack4Pan 2022](https://www.hack4pan.com/).*
