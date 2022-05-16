@@ -2,6 +2,12 @@
 *A web app that allows users to predict stock prices using LSTM and compare them to actual prices.* <br>
 *View it [here](https://share.streamlit.io/rowentey/stock-price/main/app.py). Made by [@RowenTey](https://github.com/RowenTey) & [@Horstann](https://github.com/Horstann)*
 
+#### Video Demo: https://www.youtube.com/watch?v=SKLymjKc8Ic
+
+---
+
+#### Description
+
 ## ❓ Assignment
 
 *Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events akin to Covid-19.
