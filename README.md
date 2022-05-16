@@ -10,11 +10,13 @@
 
 ## 🧪 Tech 
 
-This website is fully coded with Python. We utilised the `Streamlit` as our web app's framework, given the simplicity.
+This website is fully coded with Python. We utilised the `Streamlit` module as our web app's framework, given its simplicity and effectiveness in visualising data.
 
 The `Matplotlib` library was also used to visualize our data and construct our charts.
 
-Our stock price prediction model is LSTM, built using Data Science and Machine Learning libraries like `Numpy`, `Pandas`, `Keras` and `Tensorflow`. 
+Our stock price prediction model is LSTM, built using Data Science and Machine Learning libraries like `Numpy`, `Pandas`, `Keras` and `Tensorflow`.
+
+As for our stock price data, we extracted it via the `yfinance` API.
 
 ## 📁 Organisation
 
