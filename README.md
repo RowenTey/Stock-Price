@@ -1,6 +1,6 @@
 # 📈 Stock-Prediction-App
 *A web app that allows users to predict stock prices using LSTM and compare them to actual prices.* <br>
-View the app [here](https://share.streamlit.io/rowentey/stock-price/main/app.py)! <br>
+View it [here](https://share.streamlit.io/rowentey/stock-price/main/app.py)! <br>
 Made by: [@RowenTey](https://github.com/RowenTey) & [@Horstann](https://github.com/Horstann) <br>
 
 ## 🧪 Tech 
