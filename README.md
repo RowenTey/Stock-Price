@@ -18,6 +18,10 @@ Our stock price prediction model is LSTM, built using Data Science and Machine L
 
 ## 📁 Organisation
 
+- [.streamlit/](https://github.com/Horstann/Stock-Prediction-App/tree/main/.streamlit) contains the front-end configurations of our web app
+- [app.py](https://github.com/Horstann/Stock-Prediction-App/blob/main/app.py) contains the code of our Streamlit framework, LSTM prediction model and data visualisation.
+- [requirements.txt](https://github.com/Horstann/Stock-Prediction-App/blob/main/requirements.txt) contains all the libraries and modules required to execute our web app, alongside their respective versions
+
 ## ⚙ How To Use
 1. First, type in the **ticker** symbol you're looking for.  
 2. Next, click the arrow icon on the top left corner. This opens up a sidebar. Select the date you 3. wish to start predicting the stock price from.  
