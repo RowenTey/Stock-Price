@@ -17,7 +17,7 @@ The `Matplotlib` library was also used to visualize our data and construct our c
 
 Our stock price prediction model is LSTM, built using Data Science and Machine Learning libraries like `Numpy`, `Pandas`, `Keras` and `Tensorflow`. 
 
-## 🗃️ Organisation
+## 📁 Organisation
 
 ## ⚙ How To Use
 1. First, type in the **ticker** symbol you're looking for.  
