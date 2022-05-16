@@ -1,5 +1,6 @@
 # 📈 Stock-Price-Predictor 
 *A web app that allows users to predict stock prices using LSTM and compare them to actual prices.*
+*Made by:* @RowenTey &
 
 ## 🧪 Tech 
 
