@@ -6,8 +6,6 @@
 
 ---
 
-#### Description
-
 ## ❓ Assignment
 
 *Problem Statement*: Current LSTM price prediction models can be easily thrown off by black swan events akin to Covid-19.
