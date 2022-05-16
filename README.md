@@ -23,4 +23,4 @@ Our stock price prediction model is LSTM, built using Data Science and Machine L
 
 ---
 
-*This repository is submitted as an entry for [Hack4Pan 2022](https://www.hack4pan.com/).*
+<!-- *This repository is submitted as an entry for [Hack4Pan 2022](https://www.hack4pan.com/).* -->
