@@ -12,7 +12,7 @@
 
 This website is fully coded with Python. We utilised the `Streamlit` module as our web app's framework, given its simplicity and effectiveness in visualising data.
 
-The `Matplotlib` library was also used to visualize our data and construct our charts.
+The `Matplotlib` library was also used to visualise our data and construct our time series charts.
 
 Our stock price prediction model is LSTM, built using Data Science and Machine Learning libraries like `Numpy`, `Pandas`, `Keras` and `Tensorflow`.
 
