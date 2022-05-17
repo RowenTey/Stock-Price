@@ -156,5 +156,5 @@ if st.sidebar.button("Predict"):
     with st.spinner("Please wait..."):
         predict_stock(chart, dt64_converted)
 
-# footer          
-st.markdown("*By **Kai Seong** & **Horstann** for Hack4Pan 2022.*")
+# # footer          
+# st.markdown("*By **Kai Seong** & **Horstann** for Hack4Pan 2022.*")
