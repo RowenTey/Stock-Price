@@ -6,8 +6,6 @@
 
 ---
 
-#### Description:
-
 ## ❓ Assignment
 
 Being interested in data science and the financial markets, we were interested in how predictive models are applied in forecasting the stock market. So this project allowed us to dive deeper into this topic. The particular model we examined was called the Long Short-Term Memory or LSTM.
