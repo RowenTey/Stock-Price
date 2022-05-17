@@ -21,6 +21,6 @@ Our stock price prediction model is LSTM, built using Data Science and Machine L
 4. Give a moment for the model to process your input.  
 5. And that's it! The prediction will appear magically before your eyes. It's that **easy**!
 
----
+<!-- --- -->
 
 <!-- *This repository is submitted as an entry for [Hack4Pan 2022](https://www.hack4pan.com/).* -->
